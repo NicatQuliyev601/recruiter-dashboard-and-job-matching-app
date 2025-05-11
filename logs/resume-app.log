@@ -546,3 +546,381 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2025-05-11T14:27:52.579+04:00  INFO 33022 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-11T14:27:52.583+04:00  INFO 33022 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-05-11T14:27:52.586+04:00  INFO 33022 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-11T14:43:53.982+04:00  INFO 37970 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Starting ResumeJobmatchingAppApplication using Java 17.0.10 with PID 37970 (/Users/nicatquliyev/Desktop/resume-jobmatching-app-backend/target/classes started by nicatquliyev in /Users/nicatquliyev/Desktop/resume-jobmatching-app-backend)
+2025-05-11T14:43:53.985+04:00  INFO 37970 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-05-11T14:43:54.609+04:00  INFO 37970 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-11T14:43:54.646+04:00  INFO 37970 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 6 JPA repository interfaces.
+2025-05-11T14:43:54.949+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-11T14:43:54.955+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-11T14:43:54.955+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-11T14:43:54.979+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-11T14:43:54.979+04:00  INFO 37970 --- [resume-job-matcher-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2025-05-11T14:43:55.073+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-11T14:43:55.103+04:00  INFO 37970 --- [resume-job-matcher-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-11T14:43:55.118+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-11T14:43:55.272+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-11T14:43:55.287+04:00  INFO 37970 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-11T14:43:55.453+04:00  INFO 37970 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a30e30b
+2025-05-11T14:43:55.454+04:00  INFO 37970 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-11T14:43:55.522+04:00  INFO 37970 --- [resume-job-matcher-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-11T14:43:56.027+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-11T14:43:56.592+04:00  INFO 37970 --- [resume-job-matcher-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-11T14:43:57.292+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-11T14:43:57.453+04:00  INFO 37970 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-11T14:43:57.459+04:00  INFO 37970 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Started ResumeJobmatchingAppApplication in 3.789 seconds (process running for 4.265)
+2025-05-11T14:44:04.219+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-11T14:44:04.220+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-11T14:44:04.230+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-05-11T14:44:04.258+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.310+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.AuthService              : Logging user az.nicat.projects.resumejobmatchingapp.dto.request.LoginRequest@7881692d
+2025-05-11T14:44:04.527+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.AuthService              : Logged in user az.nicat.projects.resumejobmatchingapp.entity.User@5dc918cc
+2025-05-11T14:44:04.823+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@33838740, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:04.823+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@7c800475, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:04.823+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.823+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@2bbfe4d5, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:04.823+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.823+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.824+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-11T14:44:04.825+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.JobApplicationService    : Finding job applications by user id 2
+2025-05-11T14:44:04.825+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Getting dashboard data
+2025-05-11T14:44:04.846+04:00  WARN 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.JobApplicationService    : No job applications found for user id 2
+2025-05-11T14:44:04.846+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Total resumes: 0
+2025-05-11T14:44:04.846+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Total applications: 0
+2025-05-11T14:44:04.847+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Pending applications: 0
+2025-05-11T14:44:04.852+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@49515e95, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:04.853+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.854+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.DashboardService         : Getting dashboard data
+2025-05-11T14:44:04.856+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@756d5f09, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:04.856+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.857+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.service.JobApplicationService    : Finding job applications by user id 2
+2025-05-11T14:44:04.863+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@6f6a9da, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:04.863+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:04.863+04:00  WARN 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.service.JobApplicationService    : No job applications found for user id 2
+2025-05-11T14:44:04.863+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.DashboardService         : Total resumes: 0
+2025-05-11T14:44:04.863+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.DashboardService         : Total applications: 0
+2025-05-11T14:44:04.863+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.DashboardService         : Pending applications: 0
+2025-05-11T14:44:04.863+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-11T14:44:05.978+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@31576822, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:05.978+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:05.979+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-11T14:44:06.014+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@65bd23b7, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:06.014+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:06.015+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-11T14:44:06.982+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@2b86ccc0, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:06.982+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:06.984+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-11T14:44:07.017+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@708f2a44, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:07.017+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:07.018+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-11T14:44:38.014+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@4a1baa33, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:38.015+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:38.043+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Saving Resume with ID 2
+2025-05-11T14:44:38.050+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Getting file extension from NicatQuliyev_Resume.pdf
+2025-05-11T14:44:38.051+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : File extension: pdf
+2025-05-11T14:44:38.051+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Extracting pdf text from cv/1746960278044_NicatQuliyev_Resume.pdf
+2025-05-11T14:44:38.279+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] o.a.p.p.font.FileSystemFontProvider      : 368 new font files found, font cache will be re-built
+2025-05-11T14:44:38.279+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] o.a.p.p.font.FileSystemFontProvider      : Building on-disk font cache, this may take a while
+2025-05-11T14:44:38.935+04:00  WARN 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] o.a.p.p.font.FileSystemFontProvider      : Could not load font file '/System/Library/Fonts/Supplemental/NISC18030.ttf': 'head' table is mandatory
+2025-05-11T14:44:39.936+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] o.a.p.p.font.FileSystemFontProvider      : Finished building on-disk font cache, found 764 fonts
+2025-05-11T14:44:40.097+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Text    
+ 
+   
+ 
+Nicat Quliyev 
+ 
+Java Developer 
+Baku, 
+quliyevv.nicat2003@gmail.com , 
++994502858581, 
+linkedin.com/in/nicatquliyev, 
+github.com/NicatQuliyev601 , 
+gitlab.com/NicatQuliyev 
+ 
+SUMMARY 
+Accomplished Java developer with experience in software development, showcasing proficiency through various 
+programming trainings. Skilled in creating and implementing innovative solutions, collaborating with teams for high-
+quality project delivery, and committed to continuous learning and professional growth in the field of software 
+development.  
+ 
+PROFESSIONAL EXPERIENCE 
+ 
+Yelo Bank , Baku 
+ 
+ Java Developer Intern                                                                                                            April, 2023 – June, 2023 
+ 
+1) Collaborated with a team of developers to contribute to the development of the bank’s backend systems. 
+2) Gained practical experience in Java, Spring boot and PL/SQL, working on various aspects of applications 
+3) Participated in code reviews, bug fixing and testing to ensure the quality and reliability of the software  
+4) Successfully converted the tomcat monolith service into microservices, improving system scalability and flexibility. 
+5) Ensured compliance with security standarts and best practices in encryption techniques for banking applications. 
+ 
+ Azerbaijan Republic State Customs Committee, 
+ 
+  Volunteer                                                                                                                              July, 2022 – September, 2022 
+ 
+1) Assisted guests at the airport by answering questions and providing assistance. 
+2) Interacted with individuals in Azerbaijani, English and Russian languages to ensure effective communication and support. 
+3) Collaborated with the team to create a welcoming environment and enhance the guest experience. 
+4) Collaborated with the team to maintain a safe and secure environment for travelers and staff. 
+ 
+DIGITAL SKILLS  
+                                                                              
+ Java | Spring Boot | Git | SQL | HTML | CSS | JavaScript | Docker | Kubernetes | RabbitMq/Kafka | Redis | data structure/algorithm  
+ 
+   
+ 
+   
+ 
+ 
+Achievements & Certificates 
+ 
+Java Backend Programming (atlacademy.az/certificate)                           2021-2022 
+ 
+Completed a comprehensive Java Backend programming course where I gained proficiency In Java and Spring Boot 
+development. 
+ 
+Microservices Development (ingress-academy)                                                    2023-2023 
+ 
+Successfully completed a course in Microservices Development, gaining practical skills in designing and implementing 
+microservices arhtitectures. 
+ 
+   PROJECTS 
+ 
+   Task Management  
+   Description: Developed an online task management application using Java,Spring boot ,PostgreSql and Kafka. 
+   Implemented user authentication task creation task assignment. 
+    GitLab repository:  gitlab.com/NicatQuliyev/task-management 
+ 
+  Tour Travel Bot 
+  Description: Developed tour telegram bot using Java,Spring boot, PostgreSql,Redis and Kafka. And created an app where                
+tour companies can send offers to clients according clients’ answers to questions in telegram bot. 
+ GitHub repository: github.com/NicatQuliyev601/Tour-telegram-bot 
+ 
+   EDUCATION AND TRAININGS 
+ 
+  Advanced Backend Developer| Code Academy (Baku, 12/2023- 03/2024)  
+ Microservices Development| Ingress Academy (Baku, 01/2023- 05/2023) 
+    Java Backend Programming | ATL Academy (Baku, 06/2021- 03/2022)  
+    Bachelor's degree in computer science | Azerbaijan State Oil and Industry University (Baku, 2020- 2024) 
+ 
+Additional Information 
+LANGUAGES: Azerbaijani-native, English-Intermediate, Russian-Intermediate 
+Project Management tools: Jira,Trello,Slack 
+   
+
+2025-05-11T14:44:40.098+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Parsed text    
+ 
+   
+ 
+Nicat Quliyev 
+ 
+Java Developer 
+Baku, 
+quliyevv.nicat2003@gmail.com , 
++994502858581, 
+linkedin.com/in/nicatquliyev, 
+github.com/NicatQuliyev601 , 
+gitlab.com/NicatQuliyev 
+ 
+SUMMARY 
+Accomplished Java developer with experience in software development, showcasing proficiency through various 
+programming trainings. Skilled in creating and implementing innovative solutions, collaborating with teams for high-
+quality project delivery, and committed to continuous learning and professional growth in the field of software 
+development.  
+ 
+PROFESSIONAL EXPERIENCE 
+ 
+Yelo Bank , Baku 
+ 
+ Java Developer Intern                                                                                                            April, 2023 – June, 2023 
+ 
+1) Collaborated with a team of developers to contribute to the development of the bank’s backend systems. 
+2) Gained practical experience in Java, Spring boot and PL/SQL, working on various aspects of applications 
+3) Participated in code reviews, bug fixing and testing to ensure the quality and reliability of the software  
+4) Successfully converted the tomcat monolith service into microservices, improving system scalability and flexibility. 
+5) Ensured compliance with security standarts and best practices in encryption techniques for banking applications. 
+ 
+ Azerbaijan Republic State Customs Committee, 
+ 
+  Volunteer                                                                                                                              July, 2022 – September, 2022 
+ 
+1) Assisted guests at the airport by answering questions and providing assistance. 
+2) Interacted with individuals in Azerbaijani, English and Russian languages to ensure effective communication and support. 
+3) Collaborated with the team to create a welcoming environment and enhance the guest experience. 
+4) Collaborated with the team to maintain a safe and secure environment for travelers and staff. 
+ 
+DIGITAL SKILLS  
+                                                                              
+ Java | Spring Boot | Git | SQL | HTML | CSS | JavaScript | Docker | Kubernetes | RabbitMq/Kafka | Redis | data structure/algorithm  
+ 
+   
+ 
+   
+ 
+ 
+Achievements & Certificates 
+ 
+Java Backend Programming (atlacademy.az/certificate)                           2021-2022 
+ 
+Completed a comprehensive Java Backend programming course where I gained proficiency In Java and Spring Boot 
+development. 
+ 
+Microservices Development (ingress-academy)                                                    2023-2023 
+ 
+Successfully completed a course in Microservices Development, gaining practical skills in designing and implementing 
+microservices arhtitectures. 
+ 
+   PROJECTS 
+ 
+   Task Management  
+   Description: Developed an online task management application using Java,Spring boot ,PostgreSql and Kafka. 
+   Implemented user authentication task creation task assignment. 
+    GitLab repository:  gitlab.com/NicatQuliyev/task-management 
+ 
+  Tour Travel Bot 
+  Description: Developed tour telegram bot using Java,Spring boot, PostgreSql,Redis and Kafka. And created an app where                
+tour companies can send offers to clients according clients’ answers to questions in telegram bot. 
+ GitHub repository: github.com/NicatQuliyev601/Tour-telegram-bot 
+ 
+   EDUCATION AND TRAININGS 
+ 
+  Advanced Backend Developer| Code Academy (Baku, 12/2023- 03/2024)  
+ Microservices Development| Ingress Academy (Baku, 01/2023- 05/2023) 
+    Java Backend Programming | ATL Academy (Baku, 06/2021- 03/2022)  
+    Bachelor's degree in computer science | Azerbaijan State Oil and Industry University (Baku, 2020- 2024) 
+ 
+Additional Information 
+LANGUAGES: Azerbaijani-native, English-Intermediate, Russian-Intermediate 
+Project Management tools: Jira,Trello,Slack 
+   
+
+2025-05-11T14:44:40.163+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Parsing text    
+ 
+   
+ 
+Nicat Quliyev 
+ 
+Java Developer 
+Baku, 
+quliyevv.nicat2003@gmail.com , 
++994502858581, 
+linkedin.com/in/nicatquliyev, 
+github.com/NicatQuliyev601 , 
+gitlab.com/NicatQuliyev 
+ 
+SUMMARY 
+Accomplished Java developer with experience in software development, showcasing proficiency through various 
+programming trainings. Skilled in creating and implementing innovative solutions, collaborating with teams for high-
+quality project delivery, and committed to continuous learning and professional growth in the field of software 
+development.  
+ 
+PROFESSIONAL EXPERIENCE 
+ 
+Yelo Bank , Baku 
+ 
+ Java Developer Intern                                                                                                            April, 2023 – June, 2023 
+ 
+1) Collaborated with a team of developers to contribute to the development of the bank’s backend systems. 
+2) Gained practical experience in Java, Spring boot and PL/SQL, working on various aspects of applications 
+3) Participated in code reviews, bug fixing and testing to ensure the quality and reliability of the software  
+4) Successfully converted the tomcat monolith service into microservices, improving system scalability and flexibility. 
+5) Ensured compliance with security standarts and best practices in encryption techniques for banking applications. 
+ 
+ Azerbaijan Republic State Customs Committee, 
+ 
+  Volunteer                                                                                                                              July, 2022 – September, 2022 
+ 
+1) Assisted guests at the airport by answering questions and providing assistance. 
+2) Interacted with individuals in Azerbaijani, English and Russian languages to ensure effective communication and support. 
+3) Collaborated with the team to create a welcoming environment and enhance the guest experience. 
+4) Collaborated with the team to maintain a safe and secure environment for travelers and staff. 
+ 
+DIGITAL SKILLS  
+                                                                              
+ Java | Spring Boot | Git | SQL | HTML | CSS | JavaScript | Docker | Kubernetes | RabbitMq/Kafka | Redis | data structure/algorithm  
+ 
+   
+ 
+   
+ 
+ 
+Achievements & Certificates 
+ 
+Java Backend Programming (atlacademy.az/certificate)                           2021-2022 
+ 
+Completed a comprehensive Java Backend programming course where I gained proficiency In Java and Spring Boot 
+development. 
+ 
+Microservices Development (ingress-academy)                                                    2023-2023 
+ 
+Successfully completed a course in Microservices Development, gaining practical skills in designing and implementing 
+microservices arhtitectures. 
+ 
+   PROJECTS 
+ 
+   Task Management  
+   Description: Developed an online task management application using Java,Spring boot ,PostgreSql and Kafka. 
+   Implemented user authentication task creation task assignment. 
+    GitLab repository:  gitlab.com/NicatQuliyev/task-management 
+ 
+  Tour Travel Bot 
+  Description: Developed tour telegram bot using Java,Spring boot, PostgreSql,Redis and Kafka. And created an app where                
+tour companies can send offers to clients according clients’ answers to questions in telegram bot. 
+ GitHub repository: github.com/NicatQuliyev601/Tour-telegram-bot 
+ 
+   EDUCATION AND TRAININGS 
+ 
+  Advanced Backend Developer| Code Academy (Baku, 12/2023- 03/2024)  
+ Microservices Development| Ingress Academy (Baku, 01/2023- 05/2023) 
+    Java Backend Programming | ATL Academy (Baku, 06/2021- 03/2022)  
+    Bachelor's degree in computer science | Azerbaijan State Oil and Industry University (Baku, 2020- 2024) 
+ 
+Additional Information 
+LANGUAGES: Azerbaijani-native, English-Intermediate, Russian-Intermediate 
+Project Management tools: Jira,Trello,Slack 
+   
+
+2025-05-11T14:44:45.703+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Extracted JSON: {
+  "name": "Nicat Quliyev",
+  "email": "quliyevv.nicat2003@gmail.com",
+  "phone": "+994502858581",
+  "skills": [
+    "Java",
+    "Spring Boot",
+    "Git",
+    "SQL",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Docker",
+    "Kubernetes",
+    "RabbitMq/Kafka",
+    "Redis",
+    "data structure/algorithm"
+  ],
+  "experience": [
+    "Java Developer Intern at Yelo Bank, Baku (April, 2023 – June, 2023): Collaborated with a team of developers to contribute to the development of the bank’s backend systems. Gained practical experience in Java, Spring boot and PL/SQL, working on various aspects of applications. Participated in code reviews, bug fixing and testing to ensure the quality and reliability of the software. Successfully converted the tomcat monolith service into microservices, improving system scalability and flexibility. Ensured compliance with security standards and best practices in encryption techniques for banking applications.",
+    "Volunteer at Azerbaijan Republic State Customs Committee (July, 2022 – September, 2022): Assisted guests at the airport by answering questions and providing assistance. Interacted with individuals in Azerbaijani, English and Russian languages to ensure effective communication and support. Collaborated with the team to create a welcoming environment and enhance the guest experience. Collaborated with the team to maintain a safe and secure environment for travelers and staff."
+  ],
+  "education": [
+    "Advanced Backend Developer | Code Academy (Baku, 12/2023- 03/2024)",
+    "Microservices Development | Ingress Academy (Baku, 01/2023- 05/2023)",
+    "Java Backend Programming | ATL Academy (Baku, 06/2021- 03/2022)",
+    "Bachelor's degree in computer science | Azerbaijan State Oil and Industry University (Baku, 2020- 2024)"
+  ]
+}
+2025-05-11T14:44:45.712+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Saving Resume az.nicat.projects.resumejobmatchingapp.entity.Resume@78e55a16
+2025-05-11T14:44:45.798+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@668d3e98, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:45.798+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:45.799+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-11T14:44:45.814+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.ResumeService            : Found 1 Resumes
+2025-05-11T14:44:56.317+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@293794b4, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-11T14:44:56.318+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-11T14:44:56.321+04:00  INFO 37970 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.ResumeService            : Resume analysis
