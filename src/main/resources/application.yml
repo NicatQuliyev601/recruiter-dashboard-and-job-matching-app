@@ -2,8 +2,8 @@ spring:
   application:
     name: resume-job-matcher-app
   datasource:
-    password: password
-    url: jdbc:postgresql://localhost:5432/resume-job-matcher
+    password: EJoAjofKxgvvlaOwufadnKqKuaJcessF
+    url: jdbc:postgresql://postgres.railway.internal:5432/railway
     username: postgres
   jpa:
     hibernate:
