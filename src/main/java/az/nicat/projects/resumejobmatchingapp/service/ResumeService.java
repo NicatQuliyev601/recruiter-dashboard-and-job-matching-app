@@ -9,8 +9,14 @@ import az.nicat.projects.resumejobmatchingapp.exception.resume.ResumeNotFoundExc
 import az.nicat.projects.resumejobmatchingapp.exception.user.UserNotFoundException;
 import az.nicat.projects.resumejobmatchingapp.repository.ResumeRepository;
 import az.nicat.projects.resumejobmatchingapp.repository.UserRepository;
+import com.azure.storage.blob.BlobClient;
+import com.azure.storage.blob.BlobContainerClient;
+import com.azure.storage.blob.BlobServiceClient;
+import com.azure.storage.blob.BlobServiceClientBuilder;
+import com.azure.storage.blob.models.BlobStorageException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.apache.logging.log4j.LogManager;
@@ -28,6 +34,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -51,6 +58,12 @@ public class ResumeService {
 
     @Value("${openai.api.url}")
     private String openaiApiUrl;
+
+    @Value("${azure.storage.connection-string}")
+    private String azureConnectionString;
+
+    @Value("${azure.storage.container-name}")
+    private String azureContainerName;
 
     private final ResumeRepository resumeRepository;
     private final UserRepository userRepository;
@@ -102,29 +115,43 @@ public class ResumeService {
 
 
     public Resume saveAndStoreResume(MultipartFile file, Long userId) throws IOException {
-        logger.info("Saving Resume with ID {}", userId);
+        logger.info("Saving Resume for user ID {}", userId);
+
         Path uploadPath = Paths.get(uploadDir);
         if (!Files.exists(uploadPath)) {
             Files.createDirectories(uploadPath);
         }
 
         String originalFilename = file.getOriginalFilename();
-        String fileName = System.currentTimeMillis() + "_" + originalFilename;
-        Path filePath = uploadPath.resolve(fileName);
-        Files.copy(file.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
+        String localFileName = System.currentTimeMillis() + "_" + originalFilename;
+        Path localFilePath = uploadPath.resolve(localFileName);
+        Files.copy(file.getInputStream(), localFilePath, StandardCopyOption.REPLACE_EXISTING);
 
-        String parsedText = "";
-        String fileExtension = getFileExtension(Objects.requireNonNull(file.getOriginalFilename()));
-        logger.info("File extension: {}", fileExtension);
-        if ("docx".equalsIgnoreCase(fileExtension)) {
-            parsedText = extractDocxText(filePath.toFile());
-        } else if ("pdf".equalsIgnoreCase(fileExtension)) {
-            parsedText = extractPdfText(filePath.toFile());
-        } else {
-            parsedText = "Unsupported file type.";
+        logger.info("Uploading file to Azure Blob Storage...");
+        BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+                .connectionString(azureConnectionString)
+                .buildClient();
+
+        BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(azureContainerName);
+
+        if (!containerClient.exists()) {
+            containerClient.create();
         }
 
-        logger.info("Parsed text {}", parsedText);
+        BlobClient blobClient = containerClient.getBlobClient(localFileName);
+        blobClient.uploadFromFile(localFilePath.toString(), true);
+
+        String azureFileUrl = blobClient.getBlobUrl();
+        logger.info("Uploaded to Azure Blob URL: {}", azureFileUrl);
+
+        // 3. Parse the file
+        String fileExtension = getFileExtension(originalFilename);
+        String parsedText = switch (fileExtension.toLowerCase()) {
+            case "docx" -> extractDocxText(localFilePath.toFile());
+            case "pdf" -> extractPdfText(localFilePath.toFile());
+            default -> "Unsupported file type.";
+        };
+
         User user = userRepository.findById(userId).orElseThrow(
                 () -> new UserNotFoundException(ErrorCodes.USER_NOT_FOUND)
         );
@@ -134,12 +161,13 @@ public class ResumeService {
 
         Resume resume = new Resume();
         resume.setUser(user);
-        resume.setFileUrl(filePath.toString());
+        resume.setFileUrl(azureFileUrl);
         resume.setParsedData(json);
 
-        logger.info("Saving Resume {}", resume);
+        logger.info("Saving Resume entity...");
         return resumeRepository.save(resume);
     }
+
 
     private String extractPdfText(File pdfFile) {
         logger.info("Extracting pdf text from {}", pdfFile);
@@ -324,19 +352,35 @@ public class ResumeService {
                 () -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND)
         );
 
+        String fileName = Paths.get(resume.getFileUrl()).getFileName().toString();
+
         try {
-            Path filePath = Paths.get(resume.getFileUrl());
-            Resource resource = new UrlResource(filePath.toUri());
-            if (resource.exists() && resource.isReadable()) {
-                return resource;
-            } else {
-                throw new RuntimeException("File not found or unreadable.");
+            BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+                    .connectionString(azureConnectionString)
+                    .buildClient();
+
+            BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(azureContainerName);
+            BlobClient blobClient = containerClient.getBlobClient(fileName);
+
+            if (!blobClient.exists()) {
+                throw new RuntimeException("File not found in Azure Blob Storage.");
             }
+
+            byte[] fileBytes = blobClient.downloadContent().toBytes();
+            ByteArrayInputStream inputStream = new ByteArrayInputStream(fileBytes);
+
+            logger.info("Downloaded resume from Azure: {}", fileName);
+            return new InputStreamResource(inputStream);
+
+        } catch (BlobStorageException e) {
+            logger.error("Azure Storage error: {}", e.getMessage());
+            throw new RuntimeException("Error accessing Azure Blob Storage.");
         } catch (Exception e) {
-            logger.error("Error while downloading resume: {}", e.getMessage());
-            throw new RuntimeException("File download error.");
+            logger.error("Error while downloading resume from Azure: {}", e.getMessage());
+            throw new RuntimeException("Resume download error.");
         }
     }
+
 
 
 

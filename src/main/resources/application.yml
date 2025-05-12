@@ -30,18 +30,19 @@ spring:
             enable: true
           auth: true
 
-
-
 file:
   upload-dir: cv
 
-
-
+azure:
+  storage:
+    connection-string: ${AZURE_STORAGE_CONNECTION_STRING}
+    container-name: cv-files
 
 openai:
   api:
     key: ${OPENAI_API_KEY}
-    url: ${OPENAI_API_URL}}
+    url: ${OPENAI_API_URL}
+
 logging:
   file:
     path: logs
