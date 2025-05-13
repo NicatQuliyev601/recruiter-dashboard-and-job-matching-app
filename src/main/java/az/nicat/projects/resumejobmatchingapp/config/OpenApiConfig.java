@@ -8,15 +8,24 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 
-@SecurityScheme(name = "bearerAuth",
+@SecurityScheme(
+        name = "bearerAuth",
         description = "JWT auth description",
         scheme = "bearer",
         type = SecuritySchemeType.HTTP,
         bearerFormat = "JWT",
-        in = SecuritySchemeIn.HEADER)
+        in = SecuritySchemeIn.HEADER
+)
 @OpenAPIDefinition(
-        info = @Info(title = "Financial Assistant", version = "1.0", description = "Ai based Finance Assistant app"),
-        security = @SecurityRequirement(name = "bearerAuth")
+        info = @Info(
+                title = "Financial Assistant",
+                version = "1.0",
+                description = "AI-based Finance Assistant app"
+        ),
+        security = @SecurityRequirement(name = "bearerAuth"),
+        servers = {
+                @Server(url = "https://your-app-name.up.railway.app") // <--- ADD THIS
+        }
 )
 public class OpenApiConfig {
 
