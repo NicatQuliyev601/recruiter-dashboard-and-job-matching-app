@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: resume-job-matcher-app
+  datasource:
+    password: EJoAjofKxgvvlaOwufadnKqKuaJcessF
+    url: jdbc:postgresql://postgres.railway.internal:5432/railway
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: true
+  security:
+    secret: ${SECURITY_SECRET}
+    token:
+      expirationTime: 60
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: quliyeev.n.18@gmail.com
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+
+file:
+  upload-dir: cv
+
+azure:
+  storage:
+    connection-string: ${AZURE_STORAGE_CONNECTION_STRING}
+    container-name: cv-files
+
+openai:
+  api:
+    key: ${OPENAI_API_KEY}
+    url: ${OPENAI_API_URL}
+
+logging:
+  file:
+    path: logs
+    name: logs/resume-app.log
