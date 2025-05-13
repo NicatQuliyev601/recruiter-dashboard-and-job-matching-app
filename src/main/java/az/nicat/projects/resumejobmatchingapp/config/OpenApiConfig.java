@@ -24,7 +24,7 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
         ),
         security = @SecurityRequirement(name = "bearerAuth"),
         servers = {
-                @Server(url = "https://your-app-name.up.railway.app") // <--- ADD THIS
+                @Server(url = "https://recruiter-dashboard-and-job-matching-app-production.up.railway.app")  
         }
 )
 public class OpenApiConfig {
