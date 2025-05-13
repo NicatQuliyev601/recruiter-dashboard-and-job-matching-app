@@ -347,39 +347,39 @@ public class ResumeService {
         }
     }
 
-    public Resource downloadResumeById(Long resumeId) {
-        Resume resume = resumeRepository.findById(resumeId).orElseThrow(
-                () -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND)
-        );
+  public Resource downloadResumeById(Long resumeId) {
+    Resume resume = resumeRepository.findById(resumeId).orElseThrow(
+        () -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND)
+    );
 
-        String fileName = Paths.get(resume.getFileUrl()).getFileName().toString();
+    try {
+        // Parse the blob name from the URL
+        String azureUrl = resume.getFileUrl(); // full URL
+        URI uri = new URI(azureUrl);
+        String blobName = uri.getPath().substring(1 + azureContainerName.length()); // removes "/cv-files/"
 
-        try {
-            BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
-                    .connectionString(azureConnectionString)
-                    .buildClient();
+        logger.info("Extracted blob name: {}", blobName);
 
-            BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(azureContainerName);
-            BlobClient blobClient = containerClient.getBlobClient(fileName);
+        BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+                .connectionString(azureConnectionString)
+                .buildClient();
 
-            if (!blobClient.exists()) {
-                throw new RuntimeException("File not found in Azure Blob Storage.");
-            }
+        BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(azureContainerName);
+        BlobClient blobClient = containerClient.getBlobClient(blobName);
 
-            byte[] fileBytes = blobClient.downloadContent().toBytes();
-            ByteArrayInputStream inputStream = new ByteArrayInputStream(fileBytes);
-
-            logger.info("Downloaded resume from Azure: {}", fileName);
-            return new InputStreamResource(inputStream);
-
-        } catch (BlobStorageException e) {
-            logger.error("Azure Storage error: {}", e.getMessage());
-            throw new RuntimeException("Error accessing Azure Blob Storage.");
-        } catch (Exception e) {
-            logger.error("Error while downloading resume from Azure: {}", e.getMessage());
-            throw new RuntimeException("Resume download error.");
+        if (!blobClient.exists()) {
+            throw new RuntimeException("File not found in Azure Blob Storage.");
         }
+
+        byte[] fileBytes = blobClient.downloadContent().toBytes();
+        return new InputStreamResource(new ByteArrayInputStream(fileBytes));
+
+    } catch (Exception e) {
+        logger.error("Azure download error", e);
+        throw new RuntimeException("Resume download error.");
     }
+}
+
 
 
 
