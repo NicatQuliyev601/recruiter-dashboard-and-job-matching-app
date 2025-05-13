@@ -9,10 +9,7 @@ import az.nicat.projects.resumejobmatchingapp.exception.resume.ResumeNotFoundExc
 import az.nicat.projects.resumejobmatchingapp.exception.user.UserNotFoundException;
 import az.nicat.projects.resumejobmatchingapp.repository.ResumeRepository;
 import az.nicat.projects.resumejobmatchingapp.repository.UserRepository;
-import com.azure.storage.blob.BlobClient;
-import com.azure.storage.blob.BlobContainerClient;
-import com.azure.storage.blob.BlobServiceClient;
-import com.azure.storage.blob.BlobServiceClientBuilder;
+import com.azure.storage.blob.*;
 import com.azure.storage.blob.models.BlobStorageException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -354,30 +351,14 @@ public class ResumeService {
         );
 
         try {
-            String azureUrl = resume.getFileUrl(); // Full Azure Blob URL from DB
-            URI uri = new URI(azureUrl);
+            // Get the full Azure Blob URL from the database
+            String azureUrl = resume.getFileUrl();
 
-            // Extract container name and blob name from the URI path
-            // Example path: /cv-files/1747160849202_NicatQuliyev_Resume.pdf
-            String path = uri.getPath(); // /cv-files/1747160849202_NicatQuliyev_Resume.pdf
-            String[] pathSegments = path.split("/", 3);
-            if (pathSegments.length < 3) {
-                throw new RuntimeException("Invalid Azure Blob URL format.");
-            }
-
-            String containerName = pathSegments[1]; // "cv-files"
-            String blobName = pathSegments[2];      // "1747160849202_NicatQuliyev_Resume.pdf"
-
-            logger.info("Container name: {}", containerName);
-            logger.info("Blob name: {}", blobName);
-
-            // Build Azure blob clients
-            BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+            // Create a BlobClient directly using the full URL and connection string
+            BlobClient blobClient = new BlobClientBuilder()
+                    .endpoint(azureUrl)
                     .connectionString(azureConnectionString)
                     .buildClient();
-
-            BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
-            BlobClient blobClient = containerClient.getBlobClient(blobName);
 
             if (!blobClient.exists()) {
                 throw new RuntimeException("File not found in Azure Blob Storage.");
