@@ -63,12 +63,7 @@ public class ResumeController {
 
     @GetMapping("/{resumeId}/download")
     public ResponseEntity<Resource> downloadResume(@PathVariable Long resumeId) {
-        Resource file = resumeService.downloadResumeById(resumeId);
-        String fileName = Paths.get(Objects.requireNonNull(file.getFilename())).getFileName().toString();
-
-        return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_OCTET_STREAM)
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"")
-                .body(file);
+        return resumeService.downloadResumeById(resumeId);
     }
+
 }

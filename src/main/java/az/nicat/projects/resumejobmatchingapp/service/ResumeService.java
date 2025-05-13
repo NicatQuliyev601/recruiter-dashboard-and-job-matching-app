@@ -345,16 +345,14 @@ public class ResumeService {
         }
     }
 
-    public Resource downloadResumeById(Long resumeId) {
-        Resume resume = resumeRepository.findById(resumeId).orElseThrow(
-                () -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND)
-        );
+    public ResponseEntity<Resource> downloadResumeById(Long resumeId) {
+        Resume resume = resumeRepository.findById(resumeId)
+                .orElseThrow(() -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND));
 
         try {
-            // Get the full Azure Blob URL from the database
             String azureUrl = resume.getFileUrl();
+            String fileName = azureUrl.substring(azureUrl.lastIndexOf('/') + 1);
 
-            // Create a BlobClient directly using the full URL and connection string
             BlobClient blobClient = new BlobClientBuilder()
                     .endpoint(azureUrl)
                     .connectionString(azureConnectionString)
@@ -365,13 +363,19 @@ public class ResumeService {
             }
 
             byte[] fileBytes = blobClient.downloadContent().toBytes();
-            return new InputStreamResource(new ByteArrayInputStream(fileBytes));
+            Resource resource = new InputStreamResource(new ByteArrayInputStream(fileBytes));
+
+            return ResponseEntity.ok()
+                    .contentType(MediaType.APPLICATION_OCTET_STREAM)
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"")
+                    .body(resource);
 
         } catch (Exception e) {
             logger.error("Azure download error", e);
             throw new RuntimeException("Resume download error.");
         }
     }
+
 
 
 
