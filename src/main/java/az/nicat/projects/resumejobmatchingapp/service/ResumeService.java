@@ -348,38 +348,50 @@ public class ResumeService {
         }
     }
 
-  public Resource downloadResumeById(Long resumeId) {
-    Resume resume = resumeRepository.findById(resumeId).orElseThrow(
-        () -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND)
-    );
+    public Resource downloadResumeById(Long resumeId) {
+        Resume resume = resumeRepository.findById(resumeId).orElseThrow(
+                () -> new ResumeNotFoundException(ErrorCodes.RESUME_NOT_FOUND)
+        );
 
-    try {
-        // Parse the blob name from the URL
-        String azureUrl = resume.getFileUrl(); // full URL
-        URI uri = new URI(azureUrl);
-        String blobName = uri.getPath().substring(1 + azureContainerName.length()); // removes "/cv-files/"
+        try {
+            String azureUrl = resume.getFileUrl(); // Full Azure Blob URL from DB
+            URI uri = new URI(azureUrl);
 
-        logger.info("Extracted blob name: {}", blobName);
+            // Extract container name and blob name from the URI path
+            // Example path: /cv-files/1747160849202_NicatQuliyev_Resume.pdf
+            String path = uri.getPath(); // /cv-files/1747160849202_NicatQuliyev_Resume.pdf
+            String[] pathSegments = path.split("/", 3);
+            if (pathSegments.length < 3) {
+                throw new RuntimeException("Invalid Azure Blob URL format.");
+            }
 
-        BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
-                .connectionString(azureConnectionString)
-                .buildClient();
+            String containerName = pathSegments[1]; // "cv-files"
+            String blobName = pathSegments[2];      // "1747160849202_NicatQuliyev_Resume.pdf"
 
-        BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(azureContainerName);
-        BlobClient blobClient = containerClient.getBlobClient(blobName);
+            logger.info("Container name: {}", containerName);
+            logger.info("Blob name: {}", blobName);
 
-        if (!blobClient.exists()) {
-            throw new RuntimeException("File not found in Azure Blob Storage.");
+            // Build Azure blob clients
+            BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+                    .connectionString(azureConnectionString)
+                    .buildClient();
+
+            BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
+            BlobClient blobClient = containerClient.getBlobClient(blobName);
+
+            if (!blobClient.exists()) {
+                throw new RuntimeException("File not found in Azure Blob Storage.");
+            }
+
+            byte[] fileBytes = blobClient.downloadContent().toBytes();
+            return new InputStreamResource(new ByteArrayInputStream(fileBytes));
+
+        } catch (Exception e) {
+            logger.error("Azure download error", e);
+            throw new RuntimeException("Resume download error.");
         }
-
-        byte[] fileBytes = blobClient.downloadContent().toBytes();
-        return new InputStreamResource(new ByteArrayInputStream(fileBytes));
-
-    } catch (Exception e) {
-        logger.error("Azure download error", e);
-        throw new RuntimeException("Resume download error.");
     }
-}
+
 
 
 

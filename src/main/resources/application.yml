@@ -2,8 +2,8 @@ spring:
   application:
     name: resume-job-matcher-app
   datasource:
-    password: EJoAjofKxgvvlaOwufadnKqKuaJcessF
-    url: jdbc:postgresql://postgres.railway.internal:5432/railway
+    password: password
+    url: jdbc:postgresql://localhost:5432/resume-job-matcher
     username: postgres
   jpa:
     hibernate:
@@ -35,7 +35,7 @@ file:
 
 azure:
   storage:
-    connection-string: ${AZURE_STORAGE_CONNECTION_STRING}
+    connection-string: DefaultEndpointsProtocol=https;AccountName=cvfilesstorageaccount;AccountKey=LCjEGBAQLpL39OK6aVCPn5Ygne6gaq4ZcogW/jJZ9SwiUycmy/2NZn7SQrOFJVMVcBoZApfo5/HO+ASth7AquQ==;EndpointSuffix=core.windows.net
     container-name: cv-files
 
 openai:
