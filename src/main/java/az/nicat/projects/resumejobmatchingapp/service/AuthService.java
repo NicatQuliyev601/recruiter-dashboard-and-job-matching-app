@@ -96,7 +96,7 @@ public class AuthService {
 
         userRepository.save(user);
 
-        String confirmationLink = "http://localhost:8080/api/auth/confirmation?confirmationToken=" + confirmationToken;
+        String confirmationLink = "https://recruiter-dashboard-and-job-matching-app-production.up.railway.app/api/auth/confirmation?confirmationToken=" + confirmationToken;
         emailService.sendEmailRegister(request.getEmail(), "Confirm your email", confirmationLink);
 
         logger.info("Registered user {}", user);
