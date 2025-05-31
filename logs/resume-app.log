@@ -1,20 +1,20 @@
-2025-05-13T22:24:23.303+04:00  INFO 87967 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Starting ResumeJobmatchingAppApplication using Java 17.0.10 with PID 87967 (/Users/nicatquliyev/Desktop/resume-jobmatching-app-backend/target/classes started by nicatquliyev in /Users/nicatquliyev/Desktop/resume-jobmatching-app-backend)
-2025-05-13T22:24:23.306+04:00  INFO 87967 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-05-13T22:24:23.756+04:00  INFO 87967 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-13T22:24:23.853+04:00  INFO 87967 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 6 JPA repository interfaces.
-2025-05-13T22:24:24.189+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-13T22:24:24.195+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-13T22:24:24.196+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-05-13T22:24:24.219+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-13T22:24:24.219+04:00  INFO 87967 --- [resume-job-matcher-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
-2025-05-13T22:24:24.303+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-13T22:24:24.331+04:00  INFO 87967 --- [resume-job-matcher-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-05-13T22:24:24.352+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-13T22:24:24.505+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-13T22:24:24.521+04:00  INFO 87967 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-13T22:24:24.698+04:00  INFO 87967 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c2e33
-2025-05-13T22:24:24.699+04:00  INFO 87967 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-13T22:24:24.762+04:00  INFO 87967 --- [resume-job-matcher-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-31T11:58:11.549+04:00  INFO 26843 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Starting ResumeJobmatchingAppApplication using Java 17.0.10 with PID 26843 (/Users/nicatquliyev/Desktop/resume-jobmatching-app-backend/target/classes started by nicatquliyev in /Users/nicatquliyev/Desktop/resume-jobmatching-app-backend)
+2025-05-31T11:58:11.552+04:00  INFO 26843 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-05-31T11:58:11.999+04:00  INFO 26843 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-31T11:58:12.086+04:00  INFO 26843 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 6 JPA repository interfaces.
+2025-05-31T11:58:12.359+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-31T11:58:12.365+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-31T11:58:12.365+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-31T11:58:12.388+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-31T11:58:12.389+04:00  INFO 26843 --- [resume-job-matcher-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms
+2025-05-31T11:58:12.492+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-31T11:58:12.521+04:00  INFO 26843 --- [resume-job-matcher-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-31T11:58:12.536+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-31T11:58:12.738+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-31T11:58:12.756+04:00  INFO 26843 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-31T11:58:12.916+04:00  INFO 26843 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e7d0db2
+2025-05-31T11:58:12.917+04:00  INFO 26843 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-31T11:58:12.993+04:00  INFO 26843 --- [resume-job-matcher-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.2
@@ -22,23 +22,186 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-13T22:24:25.271+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-13T22:24:25.999+04:00  INFO 87967 --- [resume-job-matcher-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13T22:24:26.665+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-13T22:24:26.858+04:00  INFO 87967 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-13T22:24:26.864+04:00  INFO 87967 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Started ResumeJobmatchingAppApplication in 3.858 seconds (process running for 4.244)
-2025-05-13T22:24:50.451+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-13T22:24:50.451+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-13T22:24:50.453+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-05-13T22:24:50.470+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-1] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.470+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.522+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.523+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.524+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.524+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.525+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.697+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:50.774+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:24:51.106+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 320 ms
-2025-05-13T22:24:52.405+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-10] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
-2025-05-13T22:27:07.208+04:00  INFO 87967 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T11:58:13.490+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-31T11:58:14.129+04:00  INFO 26843 --- [resume-job-matcher-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-31T11:58:14.501+04:00  WARN 26843 --- [resume-job-matcher-app] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'resumeController' defined in file [/Users/nicatquliyev/Desktop/resume-jobmatching-app-backend/target/classes/az/nicat/projects/resumejobmatchingapp/controller/ResumeController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'resumeService': Injection of autowired dependencies failed
+2025-05-31T11:58:14.501+04:00  INFO 26843 --- [resume-job-matcher-app] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-31T11:58:14.503+04:00  INFO 26843 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-31T11:58:14.504+04:00  INFO 26843 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-31T11:58:14.506+04:00  INFO 26843 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-31T11:58:14.515+04:00  INFO 26843 --- [resume-job-matcher-app] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-31T11:58:14.522+04:00 ERROR 26843 --- [resume-job-matcher-app] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'resumeController' defined in file [/Users/nicatquliyev/Desktop/resume-jobmatching-app-backend/target/classes/az/nicat/projects/resumejobmatchingapp/controller/ResumeController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'resumeService': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at az.nicat.projects.resumejobmatchingapp.ResumeJobmatchingAppApplication.main(ResumeJobmatchingAppApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resumeService': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 21 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'AZURE_STORAGE_CONNECTION_STRING' in value "${AZURE_STORAGE_CONNECTION_STRING}" <-- "${azure.storage.connection-string}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:423) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:255) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:226) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:201) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:971) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1577) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 32 common frames omitted
+
+2025-05-31T11:59:29.512+04:00  INFO 26919 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Starting ResumeJobmatchingAppApplication using Java 17.0.10 with PID 26919 (/Users/nicatquliyev/Desktop/resume-jobmatching-app-backend/target/classes started by nicatquliyev in /Users/nicatquliyev/Desktop/resume-jobmatching-app-backend)
+2025-05-31T11:59:29.514+04:00  INFO 26919 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-05-31T11:59:29.931+04:00  INFO 26919 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-31T11:59:30.029+04:00  INFO 26919 --- [resume-job-matcher-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 6 JPA repository interfaces.
+2025-05-31T11:59:30.335+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-31T11:59:30.341+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-31T11:59:30.341+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-31T11:59:30.372+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-31T11:59:30.373+04:00  INFO 26919 --- [resume-job-matcher-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2025-05-31T11:59:30.462+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-31T11:59:30.492+04:00  INFO 26919 --- [resume-job-matcher-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-31T11:59:30.511+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-31T11:59:30.660+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-31T11:59:30.675+04:00  INFO 26919 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-31T11:59:30.847+04:00  INFO 26919 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3275a47f
+2025-05-31T11:59:30.848+04:00  INFO 26919 --- [resume-job-matcher-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-31T11:59:30.914+04:00  INFO 26919 --- [resume-job-matcher-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-31T11:59:31.440+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-31T11:59:31.913+04:00  INFO 26919 --- [resume-job-matcher-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-31T11:59:32.513+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-31T11:59:32.680+04:00  INFO 26919 --- [resume-job-matcher-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-31T11:59:32.686+04:00  INFO 26919 --- [resume-job-matcher-app] [main] a.n.p.r.ResumeJobmatchingAppApplication  : Started ResumeJobmatchingAppApplication in 3.453 seconds (process running for 3.88)
+2025-05-31T12:00:13.776+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-31T12:00:13.780+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-31T12:00:13.783+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-31T12:00:13.822+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:13.898+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.AuthService              : Logging user az.nicat.projects.resumejobmatchingapp.dto.request.LoginRequest@22d80365
+2025-05-31T12:00:22.616+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:22.626+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.AuthService              : Logging user az.nicat.projects.resumejobmatchingapp.dto.request.LoginRequest@48a0f2f9
+2025-05-31T12:00:27.763+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:27.766+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.service.AuthService              : Logging user az.nicat.projects.resumejobmatchingapp.dto.request.LoginRequest@1816f6f9
+2025-05-31T12:00:40.292+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.306+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.AuthService              : Logging user az.nicat.projects.resumejobmatchingapp.dto.request.LoginRequest@6bf2e71c
+2025-05-31T12:00:40.477+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.AuthService              : Logged in user az.nicat.projects.resumejobmatchingapp.entity.User@4da26a30
+2025-05-31T12:00:40.812+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@746e2c5a, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:40.812+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@6ba1f313, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:40.812+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.812+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.812+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@10668dca, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:40.812+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.814+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Getting dashboard data
+2025-05-31T12:00:40.813+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-31T12:00:40.814+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.service.JobApplicationService    : Finding job applications by user id 2
+2025-05-31T12:00:40.850+04:00  WARN 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.service.JobApplicationService    : No job applications found for user id 2
+2025-05-31T12:00:40.855+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Total resumes: 1
+2025-05-31T12:00:40.855+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Total applications: 0
+2025-05-31T12:00:40.856+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Pending applications: 0
+2025-05-31T12:00:40.861+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@96d47e6, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:40.862+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.862+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.JobApplicationService    : Finding job applications by user id 2
+2025-05-31T12:00:40.864+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-10] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@6aa2971f, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:40.865+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-10] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.866+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@63b6ecd4, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:40.866+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:40.866+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-10] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-31T12:00:40.866+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Getting dashboard data
+2025-05-31T12:00:40.868+04:00  WARN 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.JobApplicationService    : No job applications found for user id 2
+2025-05-31T12:00:40.884+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Total resumes: 1
+2025-05-31T12:00:40.885+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Total applications: 0
+2025-05-31T12:00:40.885+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-7] a.n.p.r.service.DashboardService         : Pending applications: 0
+2025-05-31T12:00:42.344+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@60db1245, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:42.345+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:42.355+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-31T12:00:42.385+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.ResumeService            : Found 1 Resumes
+2025-05-31T12:00:42.450+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@d4bb9c9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:42.451+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:42.451+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-31T12:00:42.457+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.service.ResumeService            : Found 1 Resumes
+2025-05-31T12:00:43.292+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@1c3bb841, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:43.292+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:43.293+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-5] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-31T12:00:43.318+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@4c3adf65, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:43.319+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:43.320+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-6] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-31T12:00:43.941+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@16e16e0c, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:43.942+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:43.946+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.JobApplicationService    : Finding job applications by user id 2
+2025-05-31T12:00:43.975+04:00  WARN 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.JobApplicationService    : No job applications found for user id 2
+2025-05-31T12:00:43.987+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@78ce5716, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:43.988+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:43.988+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.JobApplicationService    : Finding job applications by user id 2
+2025-05-31T12:00:43.992+04:00  WARN 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.JobApplicationService    : No job applications found for user id 2
+2025-05-31T12:00:46.355+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@69cfe797, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:46.355+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:46.360+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.ResumeService            : Finding user by id 2 
+2025-05-31T12:00:46.393+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-3] a.n.p.r.service.ResumeService            : Found user: az.nicat.projects.resumejobmatchingapp.entity.User@7e16a2f2
+2025-05-31T12:00:46.407+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@310576e4, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:46.408+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:46.408+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.service.ResumeService            : Finding user by id 2 
+2025-05-31T12:00:46.418+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-9] a.n.p.r.service.ResumeService            : Found user: az.nicat.projects.resumejobmatchingapp.entity.User@2b62ca67
+2025-05-31T12:00:46.845+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@1df4275e, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:46.845+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:46.846+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-2] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-31T12:00:46.865+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@69c10155, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:46.866+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:46.867+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-8] a.n.p.r.service.JobService               : Finding all jobs
+2025-05-31T12:00:47.690+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@855b7d9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:47.690+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:47.692+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-31T12:00:47.716+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-1] a.n.p.r.service.ResumeService            : Found 1 Resumes
+2025-05-31T12:00:47.731+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : AUTHENTICATION IS UsernamePasswordAuthenticationToken [Principal=az.nicat.projects.resumejobmatchingapp.security.jwt.JwtCredentials@518cae8e, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[JOB_SEEKER]]
+2025-05-31T12:00:47.731+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.s.filter.AuthRequestFilter       : Auth request filter is working!!
+2025-05-31T12:00:47.732+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Finding Resumes by User ID 2
+2025-05-31T12:00:47.741+04:00  INFO 26919 --- [resume-job-matcher-app] [http-nio-8080-exec-4] a.n.p.r.service.ResumeService            : Found 1 Resumes
+2025-05-31T12:01:11.393+04:00  INFO 26919 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-31T12:01:11.402+04:00  INFO 26919 --- [resume-job-matcher-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-31T12:01:11.408+04:00  INFO 26919 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-31T12:01:11.413+04:00  INFO 26919 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-31T12:01:11.421+04:00  INFO 26919 --- [resume-job-matcher-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

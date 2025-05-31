@@ -2,9 +2,9 @@ spring:
   application:
     name: resume-job-matcher-app
   datasource:
-    password: HzUjDspU14MXFBmoVFbUT12DzygokxET
-    url: jdbc:postgresql://dpg-d0taocadbo4c739friag-a.oregon-postgres.render.com:5432/resumejobmatcher
-    username: nicat
+    password: EJoAjofKxgvvlaOwufadnKqKuaJcessF
+    url: jdbc:postgresql://postgres.railway.internal:5432/railway
+    username: postgres
   jpa:
     hibernate:
       ddl-auto: update
